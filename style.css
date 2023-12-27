@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,400;0,600;0,700;1,500&family=Poppins:wght@200;300;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: black;
+	font-size: 1.8rem;
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.left_component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 1.5rem;
+	background-image: linear-gradient(
+		to bottom right,
+		hsl(252, 100%, 67%),
+		hsl(241, 81%, 54%)
+	);
+	color: white;
+	padding: 2rem 4rem;
+	box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+.score_box {
+	display: flex;
+	padding: 4rem;
+}
+.result {
+	font-size: 1.7rem;
+	margin-bottom: 1.5rem;
+	font-weight: 400;
+}
+.score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 50%;
+	background-image: linear-gradient(
+		to bottom,
+		hsla(256, 72%, 46%, 1),
+		hsla(241, 72%, 46%, 0)
+	);
+	margin-bottom: 1.5rem;
+	padding: 4rem 5.5rem;
+	font-weight: 200;
+}
+.score_number {
+	font-size: 6rem;
+	font-weight: bolder;
+	font-weight: 600;
+}
+.remark {
+	font-size: 2rem;
+	margin-bottom: 0.7rem;
+}
+.comment {
+	text-align: center;
+	font-size: medium;
+	font-weight: lighter;
+	margin-bottom: 2rem;
+}
+.right_component {
+	display: flex;
+	flex-direction: column;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 1.5rem;
+	padding: 2rem 3rem;
+	justify-content: space-around;
+	box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2);
+	padding: 2rem 3rem;
+}
+.summary {
+	font-weight: bold;
+	margin-bottom: 2.5rem;
+}
+.reaction {
+	display: flex;
+	padding: 1rem 1.3rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1.8rem;
+	background-color: hsl(0, 100%, 67%, 0.15);
+	color: hsl(0, 100%, 67%);
+}
+.reaction span {
+	margin-left: auto;
+	margin-right: 0.5rem;
+	color: black;
+}
+.memory {
+	display: flex;
+	background-color: hsl(39, 100%, 56%, 0.15);
+	color: hsl(39, 100%, 56%);
+	padding: 1rem 1.3rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1.8rem;
+}
+.memory span {
+	margin-left: 8rem;
+	color: black;
+}
+.verbal {
+	display: flex;
+	background-color: hsl(166, 100%, 37%, 0.15);
+	color: hsl(166, 100%, 37%);
+	padding: 1rem 1.3rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1.8rem;
+}
+.verbal span {
+	margin-left: 9.7rem;
+	color: black;
+}
+.visual {
+	display: flex;
+	background-color: hsla(234, 85%, 45%, 0.15);
+	color: hsl(234, 85%, 45%);
+	padding: 1rem 1.3rem;
+	border-radius: 0.5rem;
+	margin-bottom: 4.5rem;
+}
+.visual span {
+	margin-left: 9.7rem;
+	color: black;
+}
+img {
+	margin-right: 1rem;
+}
+.btn {
+	text-decoration: none;
+	color: white;
+	padding: 1.3rem 4rem;
+	background-color: hsl(224, 30%, 27%);
+	margin-bottom: 3rem;
+	border-radius: 4rem;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.btn:hover {
+	color: white;
+	background-image: linear-gradient(
+		to bottom,
+		hsl(252, 100%, 67%),
+		hsl(241, 81%, 54%)
+	);
+	transform: translateY(-0.5rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 37.5rem) {
+	html {
+		font-size: 54%;
+	}
+	.score_box {
+		display: block;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		/* overflow: hidden; */
+	}
+	.left_component {
+		border-radius: 0 0 4rem 4rem;
+		background-image: linear-gradient(
+			to bottom right,
+			hsl(252, 100%, 67%),
+			hsl(241, 81%, 54%)
+		);
+		color: white;
+		padding: 2rem 1rem;
+	}
+	.comment {
+		text-align: center;
+		font-size: medium;
+		font-weight: lighter;
+	}
+	.right_component {
+		border-radius: 0;
+		padding: 2rem 3rem;
+	}
+	.reaction {
+		padding: 1.7rem 1.3rem;
+		border-radius: 1rem;
+		margin-bottom: 1.8rem;
+	}
+	.reaction span {
+		margin-left: auto;
+		margin-right: 2rem;
+		color: black;
+	}
+	.memory {
+		padding: 1.7rem 1.3rem;
+		border-radius: 1rem;
+		margin-bottom: 1.8rem;
+	}
+	.memory span {
+		margin-left: auto;
+		margin-right: 2rem;
+		color: black;
+	}
+	.verbal {
+		padding: 1.7rem 1.3rem;
+		border-radius: 1rem;
+		margin-bottom: 1.8rem;
+	}
+	.verbal span {
+		margin-left: auto;
+		margin-right: 2rem;
+		color: black;
+	}
+	.visual {
+		padding: 1.7rem 1.3rem;
+		border-radius: 1rem;
+		margin-bottom: 4.5rem;
+	}
+	.visual span {
+		margin-left: auto;
+		margin-right: 2rem;
+		color: black;
+	}
+	.btn {
+		padding: 2.3rem;
+	}
+}
